@@ -1,0 +1,11 @@
+docker container run -d --name pg -p 5432:5432 -e POSTGRES_PASSWORD=secret -e PGDATA=/pgdata -v /pgdata:/pgdata postgres:11.4
+
+
+
+docker container exec -it pg bash   NO 
+
+
+docker container exec -it 3a627c10d1b5 psql -U postgres   NO
+
+docker container exec -it pg psql -U postgres
+
